@@ -64,5 +64,59 @@ public class Adres implements Serializable, Comparable<Adres> {
 		return 0;
 	}
 
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Ulica getUlica() {
+		return ulica;
+	}
+	public void setUlica(Ulica ulica) {
+		this.ulica = ulica;
+	}
+	public Miejscowosc getMiejscowosc() {
+		return miejscowosc;
+	}
+	public void setMiejscowosc(Miejscowosc miejscowosc) {
+		this.miejscowosc = miejscowosc;
+	}
+	public String getNrDomu() {
+		return nrDomu;
+	}
+	public void setNrDomu(String nrDomu) {
+		this.nrDomu = nrDomu;
+	}
+	public String getNrMieszkania() {
+		return nrMieszkania;
+	}
+	public void setNrMieszkania(String nrMieszkania) {
+		this.nrMieszkania = nrMieszkania;
+	}
+	public Wojewodztwo getWojewodztwo() {
+		return wojewodztwo;
+	}
+	public void setWojewodztwo(Wojewodztwo wojewodztwo) {
+		this.wojewodztwo = wojewodztwo;
+	}
+	public Gmina getGmina() {
+		return gmina;
+	}
+	public void setGmina(Gmina gmina) {
+		this.gmina = gmina;
+	}
+	public Poczta getPoczta() {
+		return poczta;
+	}
+	public void setPoczta(Poczta poczta) {
+		this.poczta = poczta;
+	}
+	public String getKodPocztowy() {
+		return kodPocztowy;
+	}
+	public void setKodPocztowy(String kodPocztowy) {
+		this.kodPocztowy = kodPocztowy;
+	}
 
 }

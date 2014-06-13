@@ -72,15 +72,95 @@ public class Osoba implements Serializable {
 		@JoinColumn(name = "KONTO_ID")
 		private Konto konto;
 
-		
 		// Zarządca pod którego podlega wnioskodawca
 		@ManyToOne(fetch = FetchType.LAZY, cascade={CascadeType.REFRESH})
 		@JoinColumn(name = "ZARZADCA_ID")
 		private Zarzadca zarzadca;
 
-		// Dane osoby upoważnionej:
-
-		
+		public Integer getId() {
+			return id;
+		}
+		public void setId(Integer id) {
+			this.id = id;
+		}
+		public String getNumer() {
+			return numer;
+		}
+		public void setNumer(String numer) {
+			this.numer = numer;
+		}
+		public String getImie() {
+			return imie;
+		}
+		public void setImie(String imie) {
+			this.imie = imie;
+		}
+		public String getNazwisko() {
+			return nazwisko;
+		}
+		public void setNazwisko(String nazwisko) {
+			this.nazwisko = nazwisko;
+		}
+		public Adres getAdres() {
+			return adres;
+		}
+		public void setAdres(Adres adres) {
+			this.adres = adres;
+		}
+		public String getPesel() {
+			return pesel;
+		}
+		public void setPesel(String pesel) {
+			this.pesel = pesel;
+		}
+		public String getNrDowodu() {
+			return nrDowodu;
+		}
+		public void setNrDowodu(String nrDowodu) {
+			this.nrDowodu = nrDowodu;
+		}
+		public Boolean getPlec() {
+			return plec;
+		}
+		public void setPlec(Boolean plec) {
+			this.plec = plec;
+		}
+		public String getTelefon() {
+			return telefon;
+		}
+		public void setTelefon(String telefon) {
+			this.telefon = telefon;
+		}
+		public String getKartaPrzedplacona() {
+			return kartaPrzedplacona;
+		}
+		public void setKartaPrzedplacona(String kartaPrzedplacona) {
+			this.kartaPrzedplacona = kartaPrzedplacona;
+		}
+		public String getFax() {
+			return fax;
+		}
+		public void setFax(String fax) {
+			this.fax = fax;
+		}
+		public Date getDataUrodzenia() {
+			return dataUrodzenia;
+		}
+		public void setDataUrodzenia(Date dataUrodzenia) {
+			this.dataUrodzenia = dataUrodzenia;
+		}
+		public Konto getKonto() {
+			return konto;
+		}
+		public void setKonto(Konto konto) {
+			this.konto = konto;
+		}
+		public Zarzadca getZarzadca() {
+			return zarzadca;
+		}
+		public void setZarzadca(Zarzadca zarzadca) {
+			this.zarzadca = zarzadca;
+		}
 	
 
 }

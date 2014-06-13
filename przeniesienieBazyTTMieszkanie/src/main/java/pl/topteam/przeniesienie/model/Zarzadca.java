@@ -59,7 +59,6 @@ public class Zarzadca implements Serializable, Comparable<Zarzadca> {
 
 	@OneToMany(mappedBy = "zarzadca", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	private List<Osoba> osoby = new ArrayList<Osoba>();
-
 	
 	@Column(name= "sposob_wyplaty")
 	private Integer sposobWyplaty;
@@ -67,8 +66,67 @@ public class Zarzadca implements Serializable, Comparable<Zarzadca> {
 
 	@Override
 	public int compareTo(Zarzadca o) {
-		// TODO Auto-generated method stub
 		return 0;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getNazwa() {
+		return nazwa;
+	}
+	public void setNazwa(String nazwa) {
+		this.nazwa = nazwa;
+	}
+	public Adres getAdres() {
+		return adres;
+	}
+	public void setAdres(Adres adres) {
+		this.adres = adres;
+	}
+	public Integer getRodzaj() {
+		return rodzaj;
+	}
+	public void setRodzaj(Integer rodzaj) {
+		this.rodzaj = rodzaj;
+	}
+	public String getFax() {
+		return fax;
+	}
+	public void setFax(String fax) {
+		this.fax = fax;
+	}
+	public String getTelefon() {
+		return telefon;
+	}
+	public void setTelefon(String telefon) {
+		this.telefon = telefon;
+	}
+	public String getKartaPrzedplacona() {
+		return kartaPrzedplacona;
+	}
+	public void setKartaPrzedplacona(String kartaPrzedplacona) {
+		this.kartaPrzedplacona = kartaPrzedplacona;
+	}
+	public Konto getKonto() {
+		return konto;
+	}
+	public void setKonto(Konto konto) {
+		this.konto = konto;
+	}
+	public List<Osoba> getOsoby() {
+		return osoby;
+	}
+	public void setOsoby(List<Osoba> osoby) {
+		this.osoby = osoby;
+	}
+	public Integer getSposobWyplaty() {
+		return sposobWyplaty;
+	}
+	public void setSposobWyplaty(Integer sposobWyplaty) {
+		this.sposobWyplaty = sposobWyplaty;
 	}
 	
 

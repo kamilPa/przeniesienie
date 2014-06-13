@@ -36,9 +36,28 @@ public class Miejscowosc implements Serializable, Comparable<Miejscowosc> {
 
 	@Override
 	public int compareTo(Miejscowosc o) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getNazwa() {
+		return nazwa;
+	}
+	public void setNazwa(String nazwa) {
+		this.nazwa = nazwa;
+	}
+	public Boolean getMiasto() {
+		return miasto;
+	}
+	public void setMiasto(Boolean miasto) {
+		this.miasto = miasto;
+	}
     
+	
    
 }
