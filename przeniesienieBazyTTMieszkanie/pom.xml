@@ -4,7 +4,7 @@
 
   <groupId>pl.topteam</groupId>
   <artifactId>przeniesienieBazyTTMieszkanie</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2</version>
   <packaging>war</packaging>
 
   <name>przeniesienieBazyTTMieszkanie</name>
@@ -30,6 +30,11 @@
     	<groupId>org.firebirdsql.jdbc</groupId>
     	<artifactId>jaybird-jdk17</artifactId>
     	<version>2.2.5</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-entitymanager</artifactId>
+    	<version>4.3.5.Final</version>
     </dependency>
   </dependencies>
 </project>
